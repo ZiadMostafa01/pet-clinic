@@ -1,14 +1,14 @@
 import { Routes, Route } from "react-router-dom";
-import ScrollToTop from "./components/ScrollToTop";
+import ScrollToTop from "./components/layout/ScrollToTop";
 
 import MainLayout from "./layouts/MainLayout";
 import ProfileLayout from "./layouts/ProfileLayout";
+import MediaPreview from "./layouts/MediaPreview";
 
 import Home from "./pages/Home";
 import MonthsCourses from "./pages/courses/MonthsCourses";
 import PackageCourses from "./pages/courses/PackageCourses";
 import PreMedia from "./pages/courses/PreMedia";
-import MediaPreview from "./pages/courses/MediaPreview";
 
 import Login from "./pages/auth/Login";
 import Register from "./pages/auth/Register";
@@ -19,11 +19,14 @@ import Wallet from "./pages/profile/Wallet";
 import Invoices from "./pages/profile/Invoices";
 import Exams from "./pages/profile/Exams";
 
+import VideoLesson from "./pages/media/VideoLesson";
+import HomeworkVideo from "./pages/media/HomeworkVideo";
+import LessonExam from "./pages/media/LessonExam";
+import LessonFile from "./pages/media/LessonFile";
+
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-
-
 
 function App() {
   useEffect(() => {
@@ -45,7 +48,6 @@ function App() {
           <Route path="months-courses" element={<MonthsCourses />} />
           <Route path="packages" element={<PackageCourses />} />
           <Route path="pre-media" element={<PreMedia />} />
-          <Route path="media-preview" element={<MediaPreview />} />
 
           <Route path="login" element={<Login />} />
           <Route path="register" element={<Register />} />
@@ -58,6 +60,14 @@ function App() {
           <Route path="wallet" element={<Wallet />} />
           <Route path="invoices" element={<Invoices />} />
           <Route path="exams" element={<Exams />} />
+        </Route>
+
+        {/* Media Layout */}
+        <Route path="/media" element={<MediaPreview />}>
+          <Route index element={<VideoLesson />} />
+          <Route path="homework" element={<HomeworkVideo />} />
+          <Route path="lesson-exam" element={<LessonExam />} />
+          <Route path="lesson-file" element={<LessonFile />} />
         </Route>
       </Routes>
     </>

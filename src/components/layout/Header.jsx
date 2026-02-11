@@ -1,8 +1,8 @@
-import logo from "../assets/images/logo.png";
-import coin from "../assets/images/coin.png";
-import userIcon from "../assets/images/user.png";
+import logo from "../../assets/images/logo.png";
+import coin from "../../assets/images/coin.png";
+import userIcon from "../../assets/images/user.png";
 
-import { useAuth } from "../context/AuthContext";
+import { useAuth } from "../../context/AuthContext";
 import { useState, useEffect, useRef } from "react";
 import { useLocation } from "react-router-dom";
 import { Link } from "react-router-dom";
@@ -60,9 +60,9 @@ const menuIcons = {
       <g fill="currentColor">
         <path d="M11.01 21.003c3.67-.038 5.717.332 9.612 1.923l.756-1.852c-4.127-1.685-6.438-2.112-10.388-2.071zm9.612 5.923c-3.895-1.59-5.942-1.961-9.612-1.923l-.02-2c3.95-.041 6.26.386 10.388 2.071zm-9.612 2.077c3.67-.038 5.717.332 9.612 1.923l.756-1.852c-4.127-1.685-6.438-2.112-10.388-2.071zm25.98 0c-3.67-.038-5.717.332-9.612 1.923l-.756-1.852c4.127-1.685 6.438-2.112 10.388-2.071zm-9.612-2.077c3.895-1.59 5.943-1.961 9.612-1.923l.02-2c-3.95-.041-6.26.386-10.388 2.071zm9.612-5.923c-3.67-.038-5.717.332-9.612 1.923l-.756-1.852c4.127-1.685 6.438-2.112 10.388-2.071zM13.5 16v-3h-2v3zm3.5-2v3h-2v-3zm3.5 4v-3h-2v3zm14-2v-3h2v3zM31 14v3h2v-3zm-3.5 4v-3h2v3z" />
         <path
-          fill-rule="evenodd"
+          fillRule="evenodd"
           d="m24 11.24l.258-.055c4.996-2.406 9.301-4.136 15.268-2.608A1.97 1.97 0 0 1 41 10.492v.281q1.079.217 2.243.498a.99.99 0 0 1 .757.965v25.539c0 .633-.583 1.105-1.204.987c-6.213-1.185-10.4-1.268-16.122-.4a3 3 0 0 1-5.348 0c-5.721-.868-9.91-.785-16.122.4A1.01 1.01 0 0 1 4 37.775V12.236a.99.99 0 0 1 .757-.965A60 60 0 0 1 7 10.773v-.281c0-.88.583-1.687 1.474-1.915c5.967-1.528 10.272.202 15.268 2.608zm1 1.807c4.98-2.404 8.734-3.88 14-2.54v22.548q0 .002-.008.008a.06.06 0 0 1-.052.013c-4.9-.898-8.681.037-12.795 1.826A3 3 0 0 0 25 34.171zm-2 .001v21.123a3 3 0 0 0-1.145.731c-4.114-1.79-7.896-2.724-12.795-1.826a.06.06 0 0 1-.053-.013h-.001L9 33.054V10.507c5.266-1.34 9.02.137 14 2.541m19-.015q-.51-.116-1-.218v20.24c0 1.31-1.21 2.21-2.421 1.989c-3.776-.693-6.8-.193-10.073 1.052c4.573-.533 8.428-.402 13.494.487zM19.494 36.096c-3.272-1.245-6.297-1.745-10.073-1.052C8.211 35.266 7 34.365 7 33.055v-20.24q-.49.102-1 .218v23.55c5.066-.889 8.92-1.02 13.494-.487"
-          clip-rule="evenodd"
+          clipRule="evenodd"
         />
       </g>
     </svg>
@@ -81,9 +81,9 @@ const menuIcons = {
       />
       <path
         fill="currentColor"
-        fill-rule="evenodd"
+        fillRule="evenodd"
         d="M21.188 8.004q-.094-.005-.2-.004h-2.773C15.944 8 14 9.736 14 12s1.944 4 4.215 4h2.773q.106.001.2-.004c.923-.056 1.739-.757 1.808-1.737c.004-.064.004-.133.004-.197V9.938c0-.064 0-.133-.004-.197c-.069-.98-.885-1.68-1.808-1.737m-3.217 5.063c.584 0 1.058-.478 1.058-1.067c0-.59-.474-1.067-1.058-1.067s-1.06.478-1.06 1.067c0 .59.475 1.067 1.06 1.067"
-        clip-rule="evenodd"
+        clipRule="evenodd"
       />
       <path
         fill="currentColor"
@@ -102,9 +102,9 @@ const menuIcons = {
       <g
         fill="none"
         stroke="currentColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="2"
       >
         <path d="M4 2v20l2-1l2 1l2-1l2 1l2-1l2 1l2-1l2 1V2l-2 1l-2-1l-2 1l-2-1l-2 1l-2-1l-2 1Z" />
         <path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8m4 1.5v-11" />
@@ -114,7 +114,7 @@ const menuIcons = {
   exams: (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlnsXlink="http://www.w3.org/1999/xlink"
       width="1.5em"
       height="1.5em"
       viewBox="0 0 256 256"
@@ -310,9 +310,9 @@ function Header() {
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
                       d="M10 19l-7-7m0 0l7-7m-7 7h18"
                     ></path>
                   </svg>
@@ -478,6 +478,7 @@ function Header() {
                     <div className="px-4 pt-4 pb-5 space-y-4 w-full">
                       <Link
                         to="/register"
+                        onClick={() => setMobileMenuOpen(false)}
                         className="group rounded-xl relative px-4 py-2 text-sm font-medium block bg-blue-800 hover:bg-blue-900"
                       >
                         <div className="flex justify-center items-center gap-1">
@@ -501,6 +502,7 @@ function Header() {
                         </div>
                       </Link>
                       <Link
+                        onClick={() => setMobileMenuOpen(false)}
                         to="/login"
                         className="group rounded-xl relative px-4 py-2 text-sm font-medium block bg-blue-800 hover:bg-blue-900"
                       >

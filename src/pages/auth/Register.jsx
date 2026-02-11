@@ -70,7 +70,7 @@ function Register() {
             </div>
             <div className="w-full sm:w-1/2">
               <label
-                for="fileInput"
+                htmlFor="fileInput"
                 className="w-full cursor-pointer flex justify-center items-center text-center mt-4 sm:mt-0 px-4 py-4 h-full bg-blue-500 text-white rounded-lg border-2 border-transparent hover:bg-transparent hover:text-blue-500 hover:border-blue-500 transition duration-500"
               >
                 ارفع البطاقة الشخصية
@@ -81,25 +81,28 @@ function Register() {
 
           <div className="flex flex-col sm:flex-row gap-4">
             <select
+              defaultValue=""
               id="governorate"
               className="flex-1 p-3 border border-gray-200 text-gray-400 bg-white rounded-md text-right focus:outline-none focus:ring focus:border-blue-300"
             >
-              <option value="" disabled selected>
+              <option value="" disabled>
                 نوع التسجيل
               </option>
-              <option>أونلاين</option>
-              <option>سنتر</option>
+              <option value="online">أونلاين</option>
+              <option value="center">سنتر</option>
             </select>
+
             <select
+              defaultValue=""
               id="grade"
               className="flex-1 p-3 border rounded-md border-gray-200 bg-white text-gray-400 text-right focus:outline-none focus:ring focus:border-blue-300"
             >
-              <option value="" disabled selected>
+              <option value="" disabled>
                 اختر الصف الدراسي
               </option>
-              <option>الصف الأول الثانوي</option>
-              <option>الصف الثاني الثانوي</option>
-              <option>الصف الثالث الثانوي</option>
+              <option value="1">الصف الأول الثانوي</option>
+              <option value="2">الصف الثاني الثانوي</option>
+              <option value="3">الصف الثالث الثانوي</option>
             </select>
           </div>
 

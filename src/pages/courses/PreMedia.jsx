@@ -374,17 +374,17 @@ function PreMedia() {
 
   return (
     <div
-      class="mb-20 pb-20 mt-4 pt-10 sm:mx-6 rounded-2xl shadow-lg"
+      className="mb-20 pb-20 mt-4 pt-10 sm:mx-6 rounded-2xl shadow-lg"
       style={{ background: `url(${bg})` }}
     >
       <section
         id="background"
-        class="rounded-md lg:px-28 m-4 shadow-2xl text-slate-100 relative bg-sky-400"
+        className="rounded-md lg:px-28 m-4 shadow-2xl text-slate-100 relative bg-sky-400"
       >
-        <div class="flex flex-col lg:flex-row py-16 px-5 justify-center text-center gap-x-5">
+        <div className="flex flex-col lg:flex-row py-16 px-5 justify-center text-center gap-x-5">
           {" "}
-          <div class="text-white w-full lg:w-1/2">
-            <div class="mb-5 sm:mb-10">
+          <div className="text-white w-full lg:w-1/2">
+            <div className="mb-5 sm:mb-10">
               <div className="flex justify-center gap-3">
                 <div className="flex items-center">
                   <svg
@@ -586,26 +586,26 @@ function PreMedia() {
           </div>
           <div
             dir="ltr"
-            class="pt-5 lg:pt-0 lg:mx-0 flex justify-center lg:justify-normal items-center w-full lg:w-1/2"
+            className="pt-5 lg:pt-0 lg:mx-0 flex justify-center lg:justify-normal items-center w-full lg:w-1/2"
           >
-            <div class="w-[80vw] sm:w-[70vw] lg:w-[30vw]">
-              <div class="rounded-t-md overflow-hidden shadow-xl">
+            <div className="w-[80vw] sm:w-[70vw] lg:w-[30vw]">
+              <div className="rounded-t-md overflow-hidden shadow-xl">
                 <img
                   src={img}
                   alt=""
-                  class="w-full object-cover rounded-t-md"
+                  className="w-full object-cover rounded-t-md"
                 />
               </div>
 
-              <div class="bg-white rounded-b-md shadow-2xl p-4 text-center z-10 relative py-8">
-                <h2 class="text-lg font-bold text-center text-gray-800">
+              <div className="bg-white rounded-b-md shadow-2xl p-4 text-center z-10 relative py-8">
+                <h2 className="text-lg font-bold text-center text-gray-800">
                   المحاضرة الأولى
                 </h2>
-                <div class="w-full h-0.5 bg-[#3fc7f3] my-2"></div>
-                <Link to="/media-preview">
-                  <div class="relative rounded px-5 py-2.5 overflow-hidden group bg-[#3fc7f3] hover:bg-gradient-to-r hover:from-imber-500 hover:to-[#3fc7f3] text-white hover:ring-2 hover:ring-offset-2 hover:ring-[#3fc7f3] transition-all ease-out duration-300">
-                    <span class="absolute right-0 w-8 h-32 -mt-12 transition-all duration-1000 transform translate-x-12 bg-white opacity-10 rotate-12 group-hover:-translate-x-40 ease"></span>
-                    <span class="relative text-base font-semibold">
+                <div className="w-full h-0.5 bg-[#3fc7f3] my-2"></div>
+                <Link to="/media">
+                  <div className="relative rounded px-5 py-2.5 overflow-hidden group bg-[#3fc7f3] hover:bg-gradient-to-r hover:from-imber-500 hover:to-[#3fc7f3] text-white hover:ring-2 hover:ring-offset-2 hover:ring-[#3fc7f3] transition-all ease-out duration-300">
+                    <span className="absolute right-0 w-8 h-32 -mt-12 transition-all duration-1000 transform translate-x-12 bg-white opacity-10 rotate-12 group-hover:-translate-x-40 ease"></span>
+                    <span className="relative text-base font-semibold">
                       مشاهدة المحاضرة
                     </span>
                   </div>
@@ -616,7 +616,7 @@ function PreMedia() {
         </div>
       </section>
 
-      <section class="mx-6 sm:mx-10 lg:mx-36 -mt-12 relative rounded-md bg-white shadow-2xl min-h-screen">
+      <section className="mx-6 sm:mx-10 lg:mx-36 -mt-12 relative rounded-md bg-white shadow-2xl min-h-screen">
         {" "}
         <div className="py-10">
           <div>
@@ -688,7 +688,7 @@ function PreMedia() {
             </div>
           </div>
         </div>
-        <div class="py-10 px-5 sm:px-10">
+        <div className="py-10 px-5 sm:px-10">
           <div className="mb-20 space-y-20">
             {examItems.map((item, index) => (
               <div key={index}>

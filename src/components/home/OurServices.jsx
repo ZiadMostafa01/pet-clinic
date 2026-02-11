@@ -2,7 +2,7 @@ function OurServices() {
   const services = [
     {
       title: "وصول سريع وسهل",
-      icon: <i class="fas fa-clock"></i>,
+      icon: <i className="fas fa-clock"></i>,
     },
     {
       title: "متابعة دورية وتقييم مستمر",
@@ -85,7 +85,7 @@ function OurServices() {
     },
     {
       title: "خطة مذاكرة جاهزة",
-      icon: <i class="fas fa-sync-alt"></i>,
+      icon: <i className="fas fa-sync-alt"></i>,
     },
   ];
 

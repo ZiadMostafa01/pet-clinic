@@ -1,14 +1,14 @@
 function ProfileInfo() {
   return (
-    <div class="flex flex-col py-5 w-full px-[5vw] my-16">
-      <div class="w-full bg-white rounded-xl shadow-lg border border-cyan-500 p-6 md:p-10">
-        <div class="flex justify-center -mt-28">
+    <div className="flex flex-col py-5 w-full px-[5vw] my-16">
+      <div className="w-full bg-white rounded-xl shadow-lg border border-cyan-500 p-6 md:p-10">
+        <div className="flex justify-center -mt-28">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="8em"
             height="8em"
             viewBox="0 0 32 32"
-            class="bg-white text-blue-500"
+            className="bg-white text-blue-500"
           >
             <path
               fill="none"
@@ -20,79 +20,85 @@ function ProfileInfo() {
             />
           </svg>
         </div>
-        <form class="space-y-6">
-          <div class="flex flex-col md:flex-row gap-4 text-right">
-            <div class="w-full">
-              <label class="block text-sm text-gray-700 mb-2">اسم الطالب</label>
+        <form className="space-y-6">
+          <div className="flex flex-col md:flex-row gap-4 text-right">
+            <div className="w-full">
+              <label className="block text-sm text-gray-700 mb-2">
+                اسم الطالب
+              </label>
               <input
                 value="زياد مصطفي علي امين"
                 type="text"
-                class="w-full border border-gray-300 bg-gray-100 rounded-md px-4 py-3 focus:outline-none"
-                readonly
+                className="w-full border border-gray-300 bg-gray-100 rounded-md px-4 py-3 focus:outline-none"
+                readOnly
               />
             </div>
 
-            <div class="w-full">
-              <label class="block text-sm text-gray-700 mb-2">
+            <div className="w-full">
+              <label className="block text-sm text-gray-700 mb-2">
                 السنة الدراسية
               </label>
               <input
                 value="الصف الثالث الثانوي"
                 type="text"
-                class="w-full border border-gray-300 bg-gray-100 rounded-md px-4 py-3 focus:outline-none"
-                readonly
+                className="w-full border border-gray-300 bg-gray-100 rounded-md px-4 py-3 focus:outline-none"
+                readOnly
               />
             </div>
           </div>
-          <div class="flex flex-col md:flex-row gap-4 text-right">
-            <div class="w-full">
-              <label class="block text-sm text-gray-700 mb-2">رقم الهاتف</label>
+          <div className="flex flex-col md:flex-row gap-4 text-right">
+            <div className="w-full">
+              <label className="block text-sm text-gray-700 mb-2">
+                رقم الهاتف
+              </label>
               <input
                 value="01027797648"
                 type="text"
-                class="w-full border border-gray-300 bg-gray-100 rounded-md px-4 py-3 focus:outline-none"
-                readonly
+                className="w-full border border-gray-300 bg-gray-100 rounded-md px-4 py-3 focus:outline-none"
+                readOnly
               />
             </div>
 
-            <div class="w-full">
-              <label class="block text-sm text-gray-700 mb-2">
+            <div className="w-full">
+              <label className="block text-sm text-gray-700 mb-2">
                 رقم هاتف ولي الأمر
               </label>
               <input
                 value="01027797648"
                 type="text"
-                class="w-full border border-gray-300 bg-gray-100 rounded-md px-4 py-3 focus:outline-none"
-                readonly
+                className="w-full border border-gray-300 bg-gray-100 rounded-md px-4 py-3 focus:outline-none"
+                readOnly
               />
             </div>
           </div>
-          <div class="flex flex-col md:flex-row gap-4 text-right">
-            <div class="w-full">
-              <label class="block text-sm text-gray-700 mb-2">الحالة</label>
+          <div className="flex flex-col md:flex-row gap-4 text-right">
+            <div className="w-full">
+              <label className="block text-sm text-gray-700 mb-2">الحالة</label>
               <input
                 value="سنتر"
                 type="text"
-                class="w-full border border-gray-300 bg-gray-100 rounded-md px-4 py-3 focus:outline-none"
-                readonly
+                className="w-full border border-gray-300 bg-gray-100 rounded-md px-4 py-3 focus:outline-none"
+                readOnly
               />
             </div>
 
-            <div class="w-full">
-              <label class="block text-sm text-gray-700 mb-2">المجموعة</label>
+            <div className="w-full">
+              <label className="block text-sm text-gray-700 mb-2">
+                المجموعة
+              </label>
               <input
                 value="الاربعاء"
                 type="text"
-                class="w-full border border-gray-300 bg-gray-100 rounded-md px-4 py-3 focus:outline-none"
-                readonly
+                className="w-full border border-gray-300 bg-gray-100 rounded-md px-4 py-3 focus:outline-none"
+                readOnly
               />
             </div>
           </div>
 
-          <div class="text-center mt-6">
+          <div className="text-center mt-6">
             <button
               type="submit"
-              class="bg-green-600 hover:bg-transparent hover:text-green-600 border-2 border-green-600 text-white font-semibold py-3 px-12 rounded-md transition duration-300"
+              className="bg-green-600 hover:bg-transparent hover:text-green-600 border-2 border-green-600 text-white font-semibold py-3 px-12 rounded-md transition duration-300"
             >
               تعديل
             </button>
@@ -100,56 +106,62 @@ function ProfileInfo() {
         </form>
       </div>
 
-      <div class="h-1 w-[80%] my-16 rounded-full bg-gray-400 m-5 mx-auto"></div>
+      <div className="h-1 w-[80%] my-16 rounded-full bg-gray-400 m-5 mx-auto"></div>
 
-      <div class="w-full bg-white rounded-xl shadow-lg border border-cyan-500 p-6 md:p-10">
-        <h2 class="text-right text-xl md:text-2xl font-bold text-gray-800 mb-6 border-b pb-4">
+      <div className="w-full bg-white rounded-xl shadow-lg border border-cyan-500 p-6 md:p-10">
+        <h2 className="text-right text-xl md:text-2xl font-bold text-gray-800 mb-6 border-b pb-4">
           تغيير كلمة المرور
         </h2>
 
-        <form class="space-y-6">
-          <div class="text-right">
-            <label for="oldPassword" class="block text-sm text-gray-700 mb-2">
+        <form className="space-y-6">
+          <div className="text-right">
+            <label
+              htmlFor="oldPassword"
+              className="block text-sm text-gray-700 mb-2"
+            >
               كلمة المرور القديمة
             </label>
             <input
               type="password"
               id="oldPassword"
-              class="w-full border border-gray-300 rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full border border-gray-300 rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
           </div>
 
-          <div class="flex flex-col md:flex-row gap-4 text-right">
-            <div class="w-full">
-              <label for="newPassword" class="block text-sm text-gray-700 mb-2">
+          <div className="flex flex-col md:flex-row gap-4 text-right">
+            <div className="w-full">
+              <label
+                htmlFor="newPassword"
+                className="block text-sm text-gray-700 mb-2"
+              >
                 كلمة المرور الجديدة
               </label>
               <input
                 type="password"
                 id="newPassword"
-                class="w-full border border-gray-300 rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full border border-gray-300 rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
             </div>
 
-            <div class="w-full">
+            <div className="w-full">
               <label
-                for="confirmPassword"
-                class="block text-sm text-gray-700 mb-2"
+                htmlFor="confirmPassword"
+                className="block text-sm text-gray-700 mb-2"
               >
                 تأكيد كلمة المرور الجديدة
               </label>
               <input
                 type="password"
                 id="confirmPassword"
-                class="w-full border border-gray-300 rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full border border-gray-300 rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
             </div>
           </div>
 
-          <div class="text-center mt-6">
+          <div className="text-center mt-6">
             <button
               type="submit"
-              class="bg-green-600 hover:bg-transparent hover:text-green-600 border-2 border-green-600 text-white font-semibold py-3 px-12 rounded-md transition duration-300"
+              className="bg-green-600 hover:bg-transparent hover:text-green-600 border-2 border-green-600 text-white font-semibold py-3 px-12 rounded-md transition duration-300"
             >
               حفظ
             </button>

@@ -67,10 +67,7 @@ import { Link } from "react-router-dom";
 
 function Landing() {
   return (
-    <section
-      id="landing"
-      className="pt-[72px] flex items-center"
-    >
+    <section id="landing" className="pt-[72px] flex items-center">
       <div className="w-full flex flex-col md:flex-row items-center justify-center gap-10 px-4">
         {/* النص */}
         <div id="hero-word" className="font-semibold text-center">
@@ -112,7 +109,11 @@ function Landing() {
 
         {/* الصورة */}
         <div id="hero-img" className="">
-          <img src={landingImg} alt="" className="w-[335px] lg:w-[500px] xl:w-[550px]" />
+          <img
+            src={landingImg}
+            alt=""
+            className="w-[335px] lg:w-[500px] xl:w-[550px]"
+          />
         </div>
       </div>
     </section>

@@ -67,7 +67,7 @@ const lessonsData = [
 function PackageCourses() {
   return (
     <div
-      class="mb-20 mt-4 py-10 sm:mx-6 rounded-2xl shadow-lg"
+      className="mb-20 mt-4 py-10 sm:mx-6 rounded-2xl shadow-lg"
       style={{ background: `url(${bg})` }}
     >
       <section id="background" className="sm:mx-6 rounded-2xl shadow-lg">

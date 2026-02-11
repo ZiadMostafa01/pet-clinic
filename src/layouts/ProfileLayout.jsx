@@ -1,6 +1,6 @@
 import { Outlet, useLocation } from "react-router-dom";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
+import Header from "../components/layout/Header";
+import Footer from "../components/layout/Footer";
 import ProfileTabs from "../components/profile/ProfileTabs";
 function ProfileLayout() {
   const location = useLocation();
@@ -119,29 +119,29 @@ function ProfileLayout() {
   return (
     <>
       <Header />
-      <div class="py-6 rounded-2xl">
+      <div className="py-6 rounded-2xl">
         <div
           id="background"
-          class="rounded-md m-1 sm:m-4 shadow-2xl relative h-[300px]"
+          className="rounded-md m-1 sm:m-4 shadow-2xl relative h-[300px]"
         ></div>
 
-        <section class="mx-2 sm:mx-[5vw] -mt-28 relative rounded-md mb-20 bg-white shadow-2xl min-h-screen">
-          <div class="pt-10">
-            <div class="flex justify-center">
-              <div class="flex flex-col justify-center items-center">
+        <section className="mx-2 sm:mx-[5vw] -mt-28 relative rounded-md mb-20 bg-white shadow-2xl min-h-screen">
+          <div className="pt-10">
+            <div className="flex justify-center">
+              <div className="flex flex-col justify-center items-center">
                 <div>
-                  <div class="bg-blue-500 text-white p-1 px-5 rounded-full relative -mb-5">
+                  <div className="bg-blue-500 text-white p-1 px-5 rounded-full relative -mb-5">
                     {currentSVG}
                   </div>
                 </div>
-                <div class="text-center bg-slate-200 py-4 sm:w-[300px] w-[200px] rounded-full font-bold text-2xl">
+                <div className="text-center bg-slate-200 py-4 sm:w-[300px] w-[200px] rounded-full font-bold text-2xl">
                   {title}
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="flex flex-col lg:flex-col pt-5">
+          <div className="flex flex-col lg:flex-col pt-5">
             <ProfileTabs />
 
             <Outlet />

@@ -1,6 +1,5 @@
-import footerBg from "../assets/images/footer-bg.webp";
-import logo from "../assets/images/logo.jpg";
-
+import footerBg from "../../assets/images/footer-bg.webp";
+import logo from "../../assets/images/logo.jpg";
 
 function Footer() {
   return (
