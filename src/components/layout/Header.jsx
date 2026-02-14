@@ -1,15 +1,10 @@
 import logo from "../../assets/images/Logo_main.png";
 import ProgressBar from "./ProgressBar";
 
-
-
 function Header() {
   return (
     <header>
-    
-      <div>
-
-      </div>
+      <div>hello</div>
       <ProgressBar />
     </header>
   );

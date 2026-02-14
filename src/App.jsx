@@ -1,6 +1,10 @@
 import { Routes, Route } from "react-router-dom";
+import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import MainLayout from "./layouts/MainLayout";
+import Home from "./pages/Home";
+
 
 function App() {
   useEffect(() => {
@@ -21,7 +25,6 @@ function App() {
           <Route index element={<Home />} />
         </Route>
       </Routes>
-      <home />
     </>
   );
 }
