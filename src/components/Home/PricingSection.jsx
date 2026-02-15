@@ -55,7 +55,7 @@ export default function PricingSection() {
           Discover Affordable Pet <br /> Wellness Options
         </h2>
       </div>
-      <div className="pt-24 px-4 relative">
+      <div className="pt-10 sm:pt-16 md:pt-24 px-4 relative">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-5xl">
           <img src={img} alt="pets" className="w-full object-contain" />
         </div>
