@@ -1,25 +1,40 @@
 @import "tailwindcss";
 
 :root {
-  --primary: #3fc7f3;
+  --primary: #72529b;
+  --secondary: #F5D7DF;
+  --secondary1: #F6844D;
+  --primary1: #39164f;
   --icon: #43941f;
 }
 
-@font-face {
-  font-family: "aqsa";
-  src: url("./assets/fonts/DG-Aqsa-italic.ttf") format("opentype");
+/* @font-face {
+  font-family: "dynapuff";
+  src: url("./assets/fonts/dynapuff.bold.ttf") format("opentype");
   font-weight: normal;
   font-style: normal;
 }
 @layer base {
-  .font-aqsa {
-    font-family: "aqsa", sans-serif;
+  .font-dynapuff {
+    font-family: "dynapuff", sans-serif;
   }
 }
+@font-face {
+  font-family: "dynapuff1";
+  src: url("./assets/fonts/dynapuff.regular.ttf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@layer base {
+  .font-dynapuff1 {
+    font-family: "dynapuff1", sans-serif;
+  }
+} */
 
 body {
-  font-family: "Almarai", sans-serif;
+  font-family: "dynapuff", sans-serif;
 }
+
 #landing {
   background-position: center;
   height: 100vh;

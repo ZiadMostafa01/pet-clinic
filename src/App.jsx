@@ -4,6 +4,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import MainLayout from "./layouts/MainLayout";
 import Home from "./pages/Home";
+import ScrollToTop from "./components/layout/ScrollToTop";
 
 
 function App() {
@@ -17,7 +18,7 @@ function App() {
   }, []);
   return (
     <>
-      {/* <ScrollToTop /> */}
+      <ScrollToTop />
 
       <Routes>
         {/* Main Layout */}
