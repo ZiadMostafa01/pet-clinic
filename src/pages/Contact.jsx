@@ -1,6 +1,6 @@
 import bg from "../assets/images/bg_img.png";
 import { MapPin, Mail, Phone, Clock } from "lucide-react";
-import hero from "../assets/images/img_8.jpg"; // حط صورة الدكاترة والكلب هنا
+import hero from "../assets/images/img_8.jpg"; 
 
 const items = [
   {

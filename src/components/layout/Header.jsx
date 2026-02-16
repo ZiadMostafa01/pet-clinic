@@ -34,43 +34,81 @@ function Header() {
               Home
             </Link>
 
-            <div className="relative group">
-              <a
-                href="#about"
-                className={`${underline} flex items-center gap-1`}
-              >
-                <span>About Us</span>
-                <svg
-                  aria-hidden="true"
-                  class="e-font-icon-svg e-fas-angle-down w-2.5"
-                  viewBox="0 0 320 512"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z"></path>
-                </svg>
-              </a>
-              <div className="absolute left-0 top-full mt-2 w-40 bg-white shadow-lg rounded-md opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-200 z-50">
-                <a href="#team" className="block px-4 py-2 hover:bg-purple-100">
-                  Why Karas
-                </a>
-                <a href="#team" className="block px-4 py-2 hover:bg-purple-100">
-                  Our Team
-                </a>
+            <div className="relative">
+              {/* Main dropdown trigger */}
+              <div className="relative group">
                 <a
-                  href="#history"
-                  className="block px-4 py-2 hover:bg-purple-100"
+                  href="#services"
+                  className={`${underline} flex items-center gap-1`}
                 >
-                  Testimonials
+                  <span>About Us</span>
+                  <svg
+                    aria-hidden="true"
+                    class="e-font-icon-svg e-fas-angle-down w-2.5"
+                    viewBox="0 0 320 512"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z"></path>
+                  </svg>{" "}
                 </a>
-                <a
-                  href="#mission"
-                  className="block px-4 py-2 hover:bg-purple-100"
-                >
-                  Volunteer
-                </a>
+
+                {/* Main dropdown */}
+
+                <div className="absolute left-0 top-full mt-2 w-40 bg-white shadow-lg rounded-md opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-200 z-50">
+                  <a
+                    href="#consulting"
+                    className="block px-4 py-2 hover:bg-purple-100"
+                  >
+                    Why Karas
+                  </a>
+                  <div
+                    className="relative"
+                    onMouseEnter={() => setSubOpen(true)}
+                    onMouseLeave={() => setSubOpen(false)}
+                  >
+                    <a
+                      href="#surgery"
+                      className="block px-4 py-2 hover:bg-purple-100 flex justify-between items-center"
+                    >
+                      Our Team <i className="fa-solid fa-angle-right"></i>
+                    </a>
+
+                    {/* Sub-dropdown يظهر فقط عند hover على Surgery */}
+                    {subOpen && (
+                      <div className="absolute top-0 left-full mt-0 w-40 bg-white shadow-lg rounded-md z-50">
+                        <a
+                          href="#orthopedic"
+                          className="block px-4 py-2 hover:bg-purple-100"
+                        >
+                          Veterinarian Vacancy
+                        </a>
+                        <a
+                          href="#dental"
+                          className="block px-4 py-2 hover:bg-purple-100"
+                        >
+                          Work With Us!{" "}
+                        </a>
+                      </div>
+                    )}
+                  </div>
+
+                  {/* عنصر Surgery مع sub-dropdown */}
+
+                  <a
+                    href="#vaccination"
+                    className="block px-4 py-2 hover:bg-purple-100"
+                  >
+                    Testimonials
+                  </a>
+                  <a
+                    href="#vaccination"
+                    className="block px-4 py-2 hover:bg-purple-100"
+                  >
+                    Volunteer
+                  </a>
+                </div>
               </div>
             </div>
-
             <div className="relative">
               {/* Main dropdown trigger */}
               <div className="relative group">
@@ -113,6 +151,18 @@ function Header() {
                           className="block px-4 py-2 hover:bg-purple-100"
                         >
                           Diagnosis
+                        </a>
+                        <a
+                          href="#orthopedic"
+                          className="block px-4 py-2 hover:bg-purple-100"
+                        >
+                          Emergency Care
+                        </a>
+                        <a
+                          href="#orthopedic"
+                          className="block px-4 py-2 hover:bg-purple-100"
+                        >
+                          Internal Medicine{" "}
                         </a>
                         <a
                           href="#dental"

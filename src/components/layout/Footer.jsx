@@ -97,7 +97,7 @@ function Footer() {
         <div>
           <h3 className="font-semibold mb-4">Useful Links</h3>
           <ul className="space-y-2 text-sm">
-            <li>✔ About Pawelle</li>
+            <li>✔ About Karas</li>
             <li>✔ Our Services</li>
             <li>✔ Pet Wellness Blog</li>
             <li>✔ Meet Our Vets</li>
