@@ -7,7 +7,7 @@ function OnlinePayment() {
         style={{
           background: `url(${bg})`,
           backgroundSize: "cover",
-          backgroundRepeat: "no-repeat", // لمنع تكرار الصورة
+          backgroundRepeat: "no-repeat",
           backgroundPosition: "bottom center",
           backgroundColor: "#F5F2F8",
           width: "100%",

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import bg from "../../assets/images/bg_img.png";
 import img from "../../assets/images/img_2.png";
 function Landing() {
@@ -43,9 +44,9 @@ function Landing() {
 
           {/* Buttons */}
           <div className="flex items-center gap-4">
-            <button className="cursor-pointer bg-[var(--primary)] hover:bg-[#F5D7DF] text-white hover:text-[var(--primary)] px-6 py-3 rounded-full transition">
+            <Link to="contact" className="cursor-pointer bg-[var(--primary)] hover:bg-[var(--secondary)] text-white hover:text-[var(--primary)] px-6 py-3 rounded-full transition">
               Contact Us
-            </button>
+            </Link>
           </div>
         </div>{" "}
         <div className="flex-shrink-0 h-full">

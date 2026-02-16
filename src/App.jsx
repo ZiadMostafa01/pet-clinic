@@ -6,6 +6,7 @@ import MainLayout from "./layouts/MainLayout";
 import Home from "./pages/Home";
 import ScrollToTop from "./components/layout/ScrollToTop";
 import OnlinePayment from "./pages/OnlinePayment";
+import Contact from "./pages/Contact";
 
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
         <Route path="/" element={<MainLayout />}>
           <Route index element={<Home />} />
           <Route path="payment" element={<OnlinePayment />} />
+          <Route path="contact" element={<Contact />} />
         </Route>
       </Routes>
     </>
