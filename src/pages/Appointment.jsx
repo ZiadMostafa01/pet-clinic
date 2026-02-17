@@ -2,6 +2,7 @@ import bg from "../assets/images/bg_img.png";
 import { CheckCircle } from "lucide-react";
 import { MessageCircleMore, Mail, FileText } from "lucide-react";
 import { Heart, Dog, Stethoscope, PawPrint } from "lucide-react";
+import PagesHeader from "../components/PagesHeader";
 
 const features = [
   {
@@ -28,25 +29,14 @@ const features = [
 export default function Appointment() {
   return (
     <div>
-      {/* Hero Section */}
-      <section
-        className="relative rounded-b-[70px] pt-6 flex justify-center items-center"
-        style={{
-          background: `url(${bg})`,
-          backgroundSize: "cover",
-          backgroundRepeat: "no-repeat",
-          backgroundPosition: "bottom center",
-          backgroundColor: "#F5F2F8",
-          width: "100%",
-        }}
-      >
-        <div className="py-12 sm:py-26 text-center text-[var(--primary1)] space-y-5">
-          <h1 className="font-bold text-5xl sm:text-7xl">Appointment</h1>
-          <p className="font-bold text-sm sm:text-2xl">
+      <PagesHeader
+        title="Appointment"
+        description={
+          <>
             Book Your Pet’s Comprehensive <br /> Wellness Appointment Now
-          </p>
-        </div>
-      </section>
+          </>
+        }
+      />
 
       {/* Form Section */}
       <main className="flex flex-col items-center justify-center py-20 relative overflow-hidden">
