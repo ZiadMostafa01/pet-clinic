@@ -157,7 +157,7 @@ function Contact() {
                       <input
                         type="text"
                         placeholder="Enter Your Full Name"
-                        className="w-full bg-gray-200 focus:bg-gray-100 transition duration-300  text-sm rounded-lg px-4 py-3 outline-none focus:ring focus:ring-purple-400"
+                        className="w-full bg-gray-200 focus:bg-gray-100 transition duration-300 text-sm rounded-lg px-4 py-3 outline-none focus:ring focus:ring-purple-400"
                       />
                     </div>
 

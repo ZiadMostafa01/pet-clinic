@@ -379,7 +379,10 @@ function Header() {
           </div>
 
           {/* Book Now Button */}
-          <button className="hidden sm:flex cursor-pointer  items-center gap-1  text-sm bg-[var(--primary)] hover:bg-[var(--secondary)] text-white hover:text-[var(--primary)] px-6 py-2 rounded-full transition">
+          <Link
+            to="appointment"
+            className="hidden sm:flex cursor-pointer  items-center gap-1  text-sm bg-[var(--primary)] hover:bg-[var(--secondary)] text-white hover:text-[var(--primary)] px-6 py-2 rounded-full transition"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="18"
@@ -392,7 +395,7 @@ function Header() {
               />
             </svg>{" "}
             <span>Book an Appointment</span>
-          </button>
+          </Link>
         </div>
       </div>
       <ProgressBar />
