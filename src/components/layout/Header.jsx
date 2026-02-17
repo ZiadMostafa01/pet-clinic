@@ -293,9 +293,13 @@ function Header() {
   ${mobileMenu ? "max-h-screen " : "max-h-0 "}`}
           >
             <nav className="flex flex-col text-[15px] font-medium text-[#4b2e83]">
-              <a className="mx-6 py-4 border-b border-dashed " href="#">
+              <Link
+                to="/"
+                onClick={() => setMobileMenu(false)}
+                className="mx-6 py-4 border-b border-dashed "
+              >
                 Home
-              </a>
+              </Link>
 
               <details className="mx-6 py-4 border-b border-dashed group">
                 <summary className="flex justify-between cursor-pointer">
@@ -350,9 +354,13 @@ function Header() {
                 </div>
               </details>
 
-              <a className="mx-6 py-4 border-b border-dashed " href="#">
+              <Link
+                to="payment"
+                onClick={() => setMobileMenu(false)}
+                className="mx-6 py-4 border-b border-dashed "
+              >
                 Online Payment
-              </a>
+              </Link>
 
               <details className="mx-6 py-4 border-b border-dashed group">
                 <summary className="flex justify-between cursor-pointer">
@@ -377,6 +385,7 @@ function Header() {
               </details>
               <Link
                 to="appointment"
+                onClick={() => setMobileMenu(false)}
                 className="flex cursor-pointer mx-6 my-3 justify-center  items-center gap-1  text-sm bg-[var(--primary)] hover:bg-[var(--secondary)] text-white hover:text-[var(--primary)] px-6 py-2 rounded-lg transition"
               >
                 <svg
@@ -397,7 +406,7 @@ function Header() {
 
           {/* Book Now Button */}
           <Link
-            to="appointment"
+            to="appointment" 
             className="hidden sm:flex cursor-pointer  items-center gap-1  text-sm bg-[var(--primary)] hover:bg-[var(--secondary)] text-white hover:text-[var(--primary)] px-6 py-2 rounded-full transition"
           >
             <svg
